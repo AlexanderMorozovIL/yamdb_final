@@ -9,25 +9,19 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
-
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
 
-from .utils import send_confirmation_code
 from .filters import TitleFilter
 from .mixins import CategoryGenreModelMixin, ModelViewSetWithoutPUT
-from .permissions import (
-    AdminModeratorAuthorReadOnly,
-    AdminOnly,
-    IsAdminOrReadOnly
-)
-from .serializers import (
-    CategorySerializer, CommentsSerializer,
-    GenreSerializer, GetTokenSerializer,
-    ReviewSerializer, SignSerializer,
-    TitleCreateSerializer, TitleGetSerializer,
-    UserSerializer
-)
+from .permissions import (AdminModeratorAuthorReadOnly, AdminOnly,
+                          IsAdminOrReadOnly)
+from .serializers import (CategorySerializer, CommentsSerializer,
+                          GenreSerializer, GetTokenSerializer,
+                          ReviewSerializer, SignSerializer,
+                          TitleCreateSerializer, TitleGetSerializer,
+                          UserSerializer)
+from .utils import send_confirmation_code
 
 
 class UserViewSet(ModelViewSetWithoutPUT):
