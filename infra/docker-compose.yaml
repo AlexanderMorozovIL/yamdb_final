@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: alexandermorozovil/api_yamdb:latest
+    image: alexandermorozovil/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
