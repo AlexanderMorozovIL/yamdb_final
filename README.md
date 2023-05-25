@@ -1,4 +1,5 @@
-# YaMDb API
+# API для проекта YaMDB в контейнере Docker
+[![API for YaMDB project workflow](https://github.com/bondarval/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=main)](https://github.com/AlexanderMorozovIL/yamdb_final/blob/master/.github/workflows/yamdb_workflow.yml)
 
 ### Краткое описание проекта:
 
