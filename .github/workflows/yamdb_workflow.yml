@@ -46,6 +46,8 @@ jobs:
         with:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:v1
+          context: api_yamdb/
+
 
   deploy:
     runs-on: ubuntu-latest
